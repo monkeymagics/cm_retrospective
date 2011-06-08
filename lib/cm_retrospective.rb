@@ -15,4 +15,8 @@ class CmRetrospective
   def velocity(options = {})
     35
   end
+
+  def velocity_per_pair_day(options = {})
+    10
+  end
 end
