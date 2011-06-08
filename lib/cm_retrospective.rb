@@ -19,4 +19,8 @@ class CmRetrospective
   def velocity_per_pair_day(options = {})
     10
   end
+
+  def velocity_per_pair_rotation(options = {})
+    2.5
+  end
 end
