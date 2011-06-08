@@ -11,4 +11,8 @@ class CmRetrospective
   def story_summary_table(options = {})
     StorySummaryTable.new
   end
+
+  def velocity(options = {})
+    35
+  end
 end
