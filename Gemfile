@@ -1,7 +1,8 @@
 source "http://rubygems.org"
 # Add dependencies required to use your gem here.
 # Example:
-#   gem "activesupport", ">= 2.3.5"
+gem "i18n", "~> 0.5.0"
+gem "activesupport", "~> 3.0.0"
 gem "pivotal-tracker"
 
 # Add dependencies to develop your gem here.
