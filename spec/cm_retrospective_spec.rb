@@ -4,12 +4,16 @@ require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 describe "CmRetrospective" do
 
   it "最も簡単な使い方" do
-    cmr = CmRetrospective.new('1234567890')
+    # CmRetrospective.newに渡す設定ファイルのパスは、それを使うコマンドで求めるor入力させる
+    # 未入力時には設定ファイルは、カレントディレクトリからルートに向かって検索する
+    # デフォルトのファイル名は、cm_retrospective.yml
 
-    # 設定ファイルは、カレントディレクトリからルートに向かって検索する
-    # ファイル名は、cm_retrospective.ymlで固定
+
+    cmr = CmRetrospective.new("~/cm2/cm_retrospective.yml")
+
     # 設定ファイルには以下の設定が可能。
     #  * pivotalのトークン
+    #  * プロジェクトのpivotalでのID
     #  * デフォルトのペア数
     #  * デフォルトの1日あたりのローテーション数
     #  * デフォルトの１イテレーションあたりの作業日数
