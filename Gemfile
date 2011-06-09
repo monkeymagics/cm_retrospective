@@ -5,6 +5,8 @@ gem "i18n", "~> 0.5.0"
 gem "activesupport", "~> 3.0.0"
 gem "pivotal-tracker"
 
+gem "fakeweb"
+
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
 group :development do
