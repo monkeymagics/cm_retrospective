@@ -16,14 +16,26 @@ describe "CmRetrospective" do
     #  * デフォルトの１イテレーションあたりの作業日数
   end
 
-  it "初期化時の設定を取得します" do
-    @cmr.config.should == {
-      :token => "xxxxx",        # pivotalのトークン
-      :project_id => 291045,    # プロジェクトのpivotalでのID
-      :pair => 3.5,             # デフォルトのペア数
-      :rotation => 3,           # デフォルトの1日あたりのローテーション数
-      :iteration_days => 4.5    # デフォルトの１イテレーションあたりの作業日数
-    }
+  context "initialize" do
+    it "初期化時の設定を取得します" do
+      @cmr.config.should == {
+        :token => "xxxxx",        # pivotalのトークン
+        :project_id => 291045,    # プロジェクトのpivotalでのID
+        :pair => 3.5,             # デフォルトのペア数
+        :rotation => 3,           # デフォルトの1日あたりのローテーション数
+        :iteration_days => 4.5    # デフォルトの１イテレーションあたりの作業日数
+      }
+    end
+
+    it "プロジェクトが取得できる" do
+      @cmr.project.name.should == "mm2"
+    end
+
+    it "currentのitrationが取得できる" do
+      @cmr.current_iteration.number.should == 4
+      @cmr.current_iteration.start.utc.strftime('%Y/%m/%d UTC').should == "2011/06/05 UTC"
+      @cmr.current_iteration.finish.utc.strftime('%Y/%m/%d UTC').should == "2011/06/12 UTC"
+    end
   end
 
   it "最も簡単な使い方" do
