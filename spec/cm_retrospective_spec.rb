@@ -95,4 +95,51 @@ EOS
     @cmr.velocity_per_pair_day(:pair => 3.5, :iteration_days => 4.5).should == 3.0
   end
 
+  context "iterations" do
+    it "current_iterations からストーリーの一覧を取得できる"
+    it "current_iterations と backlog からストーリーの一覧を取得できる"
+    it "current_iterations のイテレーション開始日から定例後の時間(金曜日の12時)を算出できる"
+    it "current_iterations のストーリーの一覧からの定例後のコメント(note)が取得できる"
+  end
+
+  context "ストーリーのコメントから所要時間を取得できる" do
+    it "所要時間(半角数字)"
+    it "所要時間(全角数字)"
+    it "作業時間(半角数字)"
+    it "作業時間(全角数字)"
+  end
+
+  context "ストーリーのコメントからペア数を取得できる" do
+    it "半角数字を含む"
+    it "全角数字を含む"
+    it "半角アンパサンドを含む"
+    it "全角アンパサンドを含む"
+
+    it "作業者が2名の場合は1ペア"
+    it "作業者が3名の場合は1ペア"
+    it "作業者が4名の場合は2ペア"
+    it "作業者が6名の場合は3ペア"
+  end
+
+  # 運用として、一度、backlogにいれたストーリーを何らかの理由でIceboxに戻したい場合は、定例でメンバーに確認してやること
+  # （backlogとiceboxの行き来に関しては、チームの合意が必要）
+  context "ストーリーのコメントから所要時間とペア数が取得できる" do
+    it "current_state が not_yet_started"
+    it "current_state が started"
+    it "current_state が finished"
+    it "current_state が deliverd"
+    it "current_state が acepted"
+    it "current_state が rejected"
+    it "current_state が 全て対象(作業時間として認めるもの)"
+    it "current_state が deliverd と finished のみ(速度として認めるもの)"
+  end
+
+  context "velocity_per_pair_rotation" do
+    it "ストーリーのポイント数の合計 / 1イテレーションあたりのタイムボックス数の合計"
+  end
+
+  context "velocity_per_pair_day" do
+    it "ストーリーのポイント数の合計 / デフォルトのペア数 / デフォルトの1イテレーションあたりの日数"
+  end
+
 end
