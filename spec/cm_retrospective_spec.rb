@@ -4,6 +4,15 @@ require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 describe "CmRetrospective" do
 
   before :all do
+    # PivotalTracker::Project
+    project_xml = nil
+    File.open(File.expand_path(File.dirname(__FILE__) + '/fixtures/project.xml')) do |f|
+      project_xml = REXML::Document.new f
+    end
+    FakeWeb.register_uri(:get, "http://www.pivotaltracker.com/services/v3/projects/291045",
+      :headers => { 'X-TrackerToken' => "xxxxx", 'Content-Type' => 'application/xml' },
+      :body => project_xml)
+
     # CmRetrospective.newに渡す設定ファイルのパスは、それを使うコマンドで求めるor入力させる
     # 未入力時には設定ファイルは、カレントディレクトリからルートに向かって検索する
     # デフォルトのファイル名は、cm_retrospective.yml

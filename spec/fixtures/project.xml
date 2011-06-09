@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <id>291045</id>
+  <name>mm2</name>
+  <iteration_length type="integer">1</iteration_length>
+  <week_start_day>Monday</week_start_day>
+  <point_scale>0,1,2,3,5,8</point_scale>
+  <account>Fuchigami</account>
+  <start_date type="date">2011/05/16</start_date>
+  <first_iteration_start_time type="datetime">2011/05/16 00:00:00 JST</first_iteration_start_time>
+  <current_iteration_number type="integer">4</current_iteration_number>
+  <enable_tasks type="boolean">true</enable_tasks>
+  <velocity_scheme>Average of 1 iteration</velocity_scheme>
+  <current_velocity>40</current_velocity>
+  <initial_velocity>45</initial_velocity>
+  <number_of_done_iterations_to_show>12</number_of_done_iterations_to_show>
+  <labels>0.9.8,0.9.9,after;</labels>
+  <last_activity_at type="datetime">2011/06/09 20:02:37 JST</last_activity_at>
+  <allow_attachments>true</allow_attachments>
+  <public>false</public>
+  <use_https>false</use_https>
+  <bugs_and_chores_are_estimatable>false</bugs_and_chores_are_estimatable>
+  <commit_mode>false</commit_mode>
+  <memberships type="array">
+    <membership>
+      <id>905237</id>
+      <person>
+        <email>h-fuchigami@github.com</email>
+        <name>h-fuchigami</name>
+        <initials>taigou</initials>
+      </person>
+      <role>Owner</role>
+    </membership>
+    <membership>
+      <id>905241</id>
+      <person>
+        <email>t-tokunaga@github.com</email>
+        <name>t-tokunaga</name>
+        <initials>totty</initials>
+      </person>
+      <role>Owner</role>
+    </membership>
+    <membership>
+      <id>923623</id>
+      <person>
+        <email>monkeymagics@github.com</email>
+        <name>monkey.magics</name>
+        <initials>mm</initials>
+      </person>
+      <role>Viewer</role>
+    </membership>
+  </memberships>
+  <integrations type="array">
+  </integrations>
+</project>
