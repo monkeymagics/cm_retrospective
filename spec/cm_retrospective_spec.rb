@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
+require 'fakeweb'
 
 describe "CmRetrospective" do
 
@@ -7,11 +8,20 @@ describe "CmRetrospective" do
     # PivotalTracker::Project
     project_xml = nil
     File.open(File.expand_path(File.dirname(__FILE__) + '/fixtures/project.xml')) do |f|
-      project_xml = REXML::Document.new f
+      project_xml = f.read
     end
     FakeWeb.register_uri(:get, "http://www.pivotaltracker.com/services/v3/projects/291045",
       :headers => { 'X-TrackerToken' => "xxxxx", 'Content-Type' => 'application/xml' },
       :body => project_xml)
+
+    # PivotalTracker::Iteration
+    iterations_xml = nil
+    File.open(File.expand_path(File.dirname(__FILE__) + '/fixtures/iterations.xml')) do |f|
+      iterations_xml = f.read
+    end
+    FakeWeb.register_uri(:get, "http://www.pivotaltracker.com/services/v3/projects/291045/iterations/current",
+      :headers => { 'X-TrackerToken' => "xxxxx", 'Content-Type' => 'application/xml' },
+      :body => iterations_xml)
 
     # CmRetrospective.newに渡す設定ファイルのパスは、それを使うコマンドで求めるor入力させる
     # 未入力時には設定ファイルは、カレントディレクトリからルートに向かって検索する

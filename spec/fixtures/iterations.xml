@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iterations type="array">
+  <iteration>
+    <id type="integer">4</id>
+    <number type="integer">4</number>
+    <start type="datetime">2011/06/06 00:00:00 JST</start>
+    <finish type="datetime">2011/06/13 00:00:00 JST</finish>
+    <team_strength type="float">1</team_strength>
+    <stories type="array">
+      <story>
+        <id type="integer">4460038</id>
+        <project_id type="integer">291045</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/4460038</url>
+        <estimate type="integer">1</estimate>
+        <current_state>accepted</current_state>
+        <description>This is a story that has comments.</description>
+        <name>This is for comments</name>
+        <requested_by>Jon Mischo</requested_by>
+        <created_at type="datetime">2011/05/27 21:53:16 JST</created_at>
+        <updated_at type="datetime">2011/05/27 22:20:48 JST</updated_at>
+        <notes type="array">
+          <note>
+            <id type="integer">2111593</id>
+            <text>所要時間: 2h (徳永＆渕上)</text>
+            <author>totty</author>
+            <noted_at type="datetime">2011/06/03 11:04:21 JST</noted_at>
+          </note>
+          <note>
+            <id type="integer">2128955</id>
+            <text>作業時間: 2.5h (徳永＆渕上)</text>
+            <author>totty</author>
+            <noted_at type="datetime">2011/06/08 11:04:21 JST</noted_at>
+          </note>
+        </notes>
+      </story>
+      <story>
+        <id type="integer">4460039</id>
+        <project_id type="integer">291045</project_id>
+        <story_type>bug</story_type>
+        <url>http://www.pivotaltracker.com/story/show/4460039</url>
+        <estimate type="integer"></estimate>
+        <current_state>finished</current_state>
+        <description>This is a story that has comments.</description>
+        <name>This is for comments</name>
+        <requested_by>Jon Mischo</requested_by>
+        <created_at type="datetime">2011/05/27 21:53:16 JST</created_at>
+        <updated_at type="datetime">2011/05/27 22:20:48 JST</updated_at>
+        <notes type="array">
+          <note>
+            <id type="integer">2111593</id>
+            <text>所要時間: 2h (徳永＆渕上)</text>
+            <author>totty</author>
+            <noted_at type="datetime">2011/06/03 12:01:21 JST</noted_at>
+          </note>
+          <note>
+            <id type="integer">2128955</id>
+            <text>作業時間: 2.5h (徳永＆渕上)</text>
+            <author>totty</author>
+            <noted_at type="datetime">2011/06/09 11:04:21 JST</noted_at>
+          </note>
+        </notes>
+      </story>
+    </stories>
+  </iteration>
+</iterations>
