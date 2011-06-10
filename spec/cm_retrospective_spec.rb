@@ -55,29 +55,28 @@ describe "CmRetrospective" do
       @cmr.current_iteration.start.utc.strftime('%Y/%m/%d UTC').should == "2011/06/05 UTC"
       @cmr.current_iteration.finish.utc.strftime('%Y/%m/%d UTC').should == "2011/06/12 UTC"
     end
+
+    it "現在のイテレーションでcurrentに入っているストーリーが取得できる" do
+      stories = @cmr.current_stories(:attributes => [:story_time, :current_state, :estimate, :name])
+      stories.should == [
+        "     bug   accepted     タイムアウト強制停止したネストしたジョブネット内のジョブを選択して再実行すると実行スケジュールが終了しない場合がある",
+        " feature   accepted   2 リリース計画を要員計画と共に見直す",
+        "   chore   accepted     九電、業務アプリの打ち合わせに参加する",
+        "     bug   accepted     NS#1776: ネストしたジョブネット内のジョブを選択して再実行すると、上位のレイヤーのFinallyジョブが実行されない",
+        " feature   accepted   3 2.0で使用するオープンソースプロダクトのライセンスを調べる",
+        " feature   accepted   1 0.9.8のNSリリースの問題に対する原因分析と対策案のレポートを作成する",
+        " feature  delivered   8 見積の根拠とする為の機能一覧をまとめる",
+        " feature  delivered   8 見積の根拠とする為の機能一覧をまとめる#レビュー",
+        " feature   finished   1 見積の根拠とする為の機能一覧をまとめる#修正",
+        " feature   finished   1 0.9.8に必要なGemfileを間違いなく揃えられるようにする",
+        "     bug    started     ジョブネットのスポット再実行を行った際に、ジョブネット内のfinallyのジョブが実行されない",
+        " feature    started   5 テスト環境の見積もり(サーバ)"
+      ]
+    end
   end
 
   it "最も簡単な使い方" do
-    stories = @cmr.current_stories(:attributes => [:story_time, :current_state, :estimate, :name])
-    stories.should == <<EOS
-     bug   accepted     タイムアウト強制停止したネストしたジョブネット内のジョブを選択して再実行すると実行スケジュールが終了しない場合がある
- feature   accepted   2 リリース計画を要員計画と共に見直す
- feature   accepted   1 0.9.8のNSリリースの問題に対する原因分析と対策案のレポートを作成する
- feature   accepted   3 九電向けMMの必要サーバー構成の見積もり案を提示する
-   chore   accepted     九電、業務アプリの打ち合わせに参加する
-     bug   accepted     NS#1776: ネストしたジョブネット内のジョブを選択して再実行すると、上位のレイヤーのFinallyジョブが実行されない
- feature   accepted   3 2.0で使用するオープンソースプロダクトのライセンスを調べる
- feature  delivered   8 見積の根拠とする為の機能一覧をまとめる
- feature  delivered   8 見積の根拠とする為の機能一覧をまとめる#レビュー
- feature   finished   1 0.9.8に必要なGemfileを間違いなく揃えられるようにする
- feature   finished   1 見積の根拠とする為の機能一覧をまとめる#修正
- feature    started   5 テスト環境の見積もり(サーバ)
- feature    started   5 CIを設定する
-     bug    started     ジョブネットのスポット再実行を行った際に、ジョブネット内のfinallyのジョブが実行されない
-   chore    started     プロダクト名の決定
- feature    started   5 イテレーション毎のdeliver/finishされているストーリーのポイントの合計を計算するツールを作成する
-EOS
-
+    # このテストは最終的に消すこと
     table = @cmr.story_summary_table(:since => 1.week.ago)
     table.to_text.should == <<EOS
 type     point  spent  story_name

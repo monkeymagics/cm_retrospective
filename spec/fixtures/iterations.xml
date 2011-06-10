@@ -12,10 +12,10 @@
         <project_id type="integer">291045</project_id>
         <story_type>feature</story_type>
         <url>http://www.pivotaltracker.com/story/show/4460038</url>
-        <estimate type="integer">1</estimate>
-        <current_state>accepted</current_state>
+        <estimate type="integer">8</estimate>
+        <current_state>delivered</current_state>
         <description>This is a story that has comments.</description>
-        <name>This is for comments</name>
+        <name>見積の根拠とする為の機能一覧をまとめる</name>
         <requested_by>Jon Mischo</requested_by>
         <created_at type="datetime">2011/05/27 21:53:16 JST</created_at>
         <updated_at type="datetime">2011/05/27 22:20:48 JST</updated_at>
@@ -40,9 +40,279 @@
         <story_type>bug</story_type>
         <url>http://www.pivotaltracker.com/story/show/4460039</url>
         <estimate type="integer"></estimate>
+        <current_state>accepted</current_state>
+        <description>This is a story that has comments.</description>
+        <name>タイムアウト強制停止したネストしたジョブネット内のジョブを選択して再実行すると実行スケジュールが終了しない場合がある</name>
+        <requested_by>Jon Mischo</requested_by>
+        <created_at type="datetime">2011/05/27 21:53:16 JST</created_at>
+        <updated_at type="datetime">2011/05/27 22:20:48 JST</updated_at>
+        <notes type="array">
+          <note>
+            <id type="integer">2111593</id>
+            <text>所要時間: 2h (徳永＆渕上)</text>
+            <author>totty</author>
+            <noted_at type="datetime">2011/06/03 12:01:21 JST</noted_at>
+          </note>
+          <note>
+            <id type="integer">2128955</id>
+            <text>作業時間: 2.5h (徳永＆渕上)</text>
+            <author>totty</author>
+            <noted_at type="datetime">2011/06/09 11:04:21 JST</noted_at>
+          </note>
+        </notes>
+      </story>
+      <story>
+        <id type="integer">4460040</id>
+        <project_id type="integer">291045</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/</url>
+        <estimate type="integer">2</estimate>
+        <current_state>accepted</current_state>
+        <description>This is a story that has comments.</description>
+        <name>リリース計画を要員計画と共に見直す</name>
+        <requested_by>Jon Mischo</requested_by>
+        <created_at type="datetime">2011/05/27 21:53:16 JST</created_at>
+        <updated_at type="datetime">2011/05/27 22:20:48 JST</updated_at>
+        <notes type="array">
+          <note>
+            <id type="integer">2111593</id>
+            <text>所要時間: 2h (徳永＆渕上)</text>
+            <author>totty</author>
+            <noted_at type="datetime">2011/06/03 12:01:21 JST</noted_at>
+          </note>
+          <note>
+            <id type="integer">2128955</id>
+            <text>作業時間: 2.5h (徳永＆渕上)</text>
+            <author>totty</author>
+            <noted_at type="datetime">2011/06/09 11:04:21 JST</noted_at>
+          </note>
+        </notes>
+      </story>
+      <story>
+        <id type="integer">4460041</id>
+        <project_id type="integer">291045</project_id>
+        <story_type>chore</story_type>
+        <url>http://www.pivotaltracker.com/story/show/</url>
+        <estimate type="integer"></estimate>
+        <current_state>accepted</current_state>
+        <description>This is a story that has comments.</description>
+        <name>九電、業務アプリの打ち合わせに参加する</name>
+        <requested_by>Jon Mischo</requested_by>
+        <created_at type="datetime">2011/05/27 21:53:16 JST</created_at>
+        <updated_at type="datetime">2011/05/27 22:20:48 JST</updated_at>
+        <notes type="array">
+          <note>
+            <id type="integer">2111593</id>
+            <text>所要時間: 2h (徳永＆渕上)</text>
+            <author>totty</author>
+            <noted_at type="datetime">2011/06/03 12:01:21 JST</noted_at>
+          </note>
+          <note>
+            <id type="integer">2128955</id>
+            <text>作業時間: 2.5h (徳永＆渕上)</text>
+            <author>totty</author>
+            <noted_at type="datetime">2011/06/09 11:04:21 JST</noted_at>
+          </note>
+        </notes>
+      </story>
+      <story>
+        <id type="integer">4460042</id>
+        <project_id type="integer">291045</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/</url>
+        <estimate type="integer">1</estimate>
         <current_state>finished</current_state>
         <description>This is a story that has comments.</description>
-        <name>This is for comments</name>
+        <name>見積の根拠とする為の機能一覧をまとめる#修正</name>
+        <requested_by>Jon Mischo</requested_by>
+        <created_at type="datetime">2011/05/27 21:53:16 JST</created_at>
+        <updated_at type="datetime">2011/05/27 22:20:48 JST</updated_at>
+        <notes type="array">
+          <note>
+            <id type="integer">2111593</id>
+            <text>所要時間: 2h (徳永＆渕上)</text>
+            <author>totty</author>
+            <noted_at type="datetime">2011/06/03 12:01:21 JST</noted_at>
+          </note>
+          <note>
+            <id type="integer">2128955</id>
+            <text>作業時間: 2.5h (徳永＆渕上)</text>
+            <author>totty</author>
+            <noted_at type="datetime">2011/06/09 11:04:21 JST</noted_at>
+          </note>
+        </notes>
+      </story>
+      <story>
+        <id type="integer">4460043</id>
+        <project_id type="integer">291045</project_id>
+        <story_type>bug</story_type>
+        <url>http://www.pivotaltracker.com/story/show/</url>
+        <estimate type="integer"></estimate>
+        <current_state>accepted</current_state>
+        <description>This is a story that has comments.</description>
+        <name>NS#1776: ネストしたジョブネット内のジョブを選択して再実行すると、上位のレイヤーのFinallyジョブが実行されない</name>
+        <requested_by>Jon Mischo</requested_by>
+        <created_at type="datetime">2011/05/27 21:53:16 JST</created_at>
+        <updated_at type="datetime">2011/05/27 22:20:48 JST</updated_at>
+        <notes type="array">
+          <note>
+            <id type="integer">2111593</id>
+            <text>所要時間: 2h (徳永＆渕上)</text>
+            <author>totty</author>
+            <noted_at type="datetime">2011/06/03 12:01:21 JST</noted_at>
+          </note>
+          <note>
+            <id type="integer">2128955</id>
+            <text>作業時間: 2.5h (徳永＆渕上)</text>
+            <author>totty</author>
+            <noted_at type="datetime">2011/06/09 11:04:21 JST</noted_at>
+          </note>
+        </notes>
+      </story>
+      <story>
+        <id type="integer">4460044</id>
+        <project_id type="integer">291045</project_id>
+        <story_type>bug</story_type>
+        <url>http://www.pivotaltracker.com/story/show/</url>
+        <estimate type="integer"></estimate>
+        <current_state>started</current_state>
+        <description>This is a story that has comments.</description>
+        <name>ジョブネットのスポット再実行を行った際に、ジョブネット内のfinallyのジョブが実行されない</name>
+        <requested_by>Jon Mischo</requested_by>
+        <created_at type="datetime">2011/05/27 21:53:16 JST</created_at>
+        <updated_at type="datetime">2011/05/27 22:20:48 JST</updated_at>
+        <notes type="array">
+          <note>
+            <id type="integer">2111593</id>
+            <text>所要時間: 2h (徳永＆渕上)</text>
+            <author>totty</author>
+            <noted_at type="datetime">2011/06/03 12:01:21 JST</noted_at>
+          </note>
+          <note>
+            <id type="integer">2128955</id>
+            <text>作業時間: 2.5h (徳永＆渕上)</text>
+            <author>totty</author>
+            <noted_at type="datetime">2011/06/09 11:04:21 JST</noted_at>
+          </note>
+        </notes>
+      </story>
+      <story>
+        <id type="integer">4460045</id>
+        <project_id type="integer">291045</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/</url>
+        <estimate type="integer">3</estimate>
+        <current_state>accepted</current_state>
+        <description>This is a story that has comments.</description>
+        <name>2.0で使用するオープンソースプロダクトのライセンスを調べる</name>
+        <requested_by>Jon Mischo</requested_by>
+        <created_at type="datetime">2011/05/27 21:53:16 JST</created_at>
+        <updated_at type="datetime">2011/05/27 22:20:48 JST</updated_at>
+        <notes type="array">
+          <note>
+            <id type="integer">2111593</id>
+            <text>所要時間: 2h (徳永＆渕上)</text>
+            <author>totty</author>
+            <noted_at type="datetime">2011/06/03 12:01:21 JST</noted_at>
+          </note>
+          <note>
+            <id type="integer">2128955</id>
+            <text>作業時間: 2.5h (徳永＆渕上)</text>
+            <author>totty</author>
+            <noted_at type="datetime">2011/06/09 11:04:21 JST</noted_at>
+          </note>
+        </notes>
+      </story>
+      <story>
+        <id type="integer">4460046</id>
+        <project_id type="integer">291045</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/</url>
+        <estimate type="integer">8</estimate>
+        <current_state>delivered</current_state>
+        <description>This is a story that has comments.</description>
+        <name>見積の根拠とする為の機能一覧をまとめる#レビュー</name>
+        <requested_by>Jon Mischo</requested_by>
+        <created_at type="datetime">2011/05/27 21:53:16 JST</created_at>
+        <updated_at type="datetime">2011/05/27 22:20:48 JST</updated_at>
+        <notes type="array">
+          <note>
+            <id type="integer">2111593</id>
+            <text>所要時間: 2h (徳永＆渕上)</text>
+            <author>totty</author>
+            <noted_at type="datetime">2011/06/03 12:01:21 JST</noted_at>
+          </note>
+          <note>
+            <id type="integer">2128955</id>
+            <text>作業時間: 2.5h (徳永＆渕上)</text>
+            <author>totty</author>
+            <noted_at type="datetime">2011/06/09 11:04:21 JST</noted_at>
+          </note>
+        </notes>
+      </story>
+      <story>
+        <id type="integer">4460047</id>
+        <project_id type="integer">291045</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/</url>
+        <estimate type="integer">1</estimate>
+        <current_state>finished</current_state>
+        <description>This is a story that has comments.</description>
+        <name>0.9.8に必要なGemfileを間違いなく揃えられるようにする</name>
+        <requested_by>Jon Mischo</requested_by>
+        <created_at type="datetime">2011/05/27 21:53:16 JST</created_at>
+        <updated_at type="datetime">2011/05/27 22:20:48 JST</updated_at>
+        <notes type="array">
+          <note>
+            <id type="integer">2111593</id>
+            <text>所要時間: 2h (徳永＆渕上)</text>
+            <author>totty</author>
+            <noted_at type="datetime">2011/06/03 12:01:21 JST</noted_at>
+          </note>
+          <note>
+            <id type="integer">2128955</id>
+            <text>作業時間: 2.5h (徳永＆渕上)</text>
+            <author>totty</author>
+            <noted_at type="datetime">2011/06/09 11:04:21 JST</noted_at>
+          </note>
+        </notes>
+      </story>
+      <story>
+        <id type="integer">4460048</id>
+        <project_id type="integer">291045</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/</url>
+        <estimate type="integer">1</estimate>
+        <current_state>accepted</current_state>
+        <description>This is a story that has comments.</description>
+        <name>0.9.8のNSリリースの問題に対する原因分析と対策案のレポートを作成する</name>
+        <requested_by>Jon Mischo</requested_by>
+        <created_at type="datetime">2011/05/27 21:53:16 JST</created_at>
+        <updated_at type="datetime">2011/05/27 22:20:48 JST</updated_at>
+        <notes type="array">
+          <note>
+            <id type="integer">2111593</id>
+            <text>所要時間: 2h (徳永＆渕上)</text>
+            <author>totty</author>
+            <noted_at type="datetime">2011/06/03 12:01:21 JST</noted_at>
+          </note>
+          <note>
+            <id type="integer">2128955</id>
+            <text>作業時間: 2.5h (徳永＆渕上)</text>
+            <author>totty</author>
+            <noted_at type="datetime">2011/06/09 11:04:21 JST</noted_at>
+          </note>
+        </notes>
+      </story>
+      <story>
+        <id type="integer">4460049</id>
+        <project_id type="integer">291045</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/</url>
+        <estimate type="integer">5</estimate>
+        <current_state>started</current_state>
+        <description>This is a story that has comments.</description>
+        <name>テスト環境の見積もり(サーバ)</name>
         <requested_by>Jon Mischo</requested_by>
         <created_at type="datetime">2011/05/27 21:53:16 JST</created_at>
         <updated_at type="datetime">2011/05/27 22:20:48 JST</updated_at>
