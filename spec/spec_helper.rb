@@ -38,3 +38,20 @@ File.open(File.expand_path(File.dirname(__FILE__) + '/fixtures/stories.xml')) do
 FakeWeb.register_uri(:get, "http://www.pivotaltracker.com/services/v3/projects/291045/stories",
   :headers => { 'X-TrackerToken' => "xxxxx", 'Content-Type' => 'application/xml' },
   :body => stories_xml)
+
+# PivotalTracker::Note
+ notes_4460038_xml = nil
+ File.open(File.expand_path(File.dirname(__FILE__) + '/fixtures/notes_4460038.xml')) do |f|
+   notes_4460038_xml = f.read
+ end
+ FakeWeb.register_uri(:get, "http://www.pivotaltracker.com/services/v3/projects/291045/stories/4460038/notes",
+   :headers => { 'X-TrackerToken' => "xxxxx", 'Content-Type' => 'application/xml' },
+   :body => notes_4460038_xml)
+
+ notes_4460039_xml = nil
+ File.open(File.expand_path(File.dirname(__FILE__) + '/fixtures/notes_4460039.xml')) do |f|
+   notes_4460039_xml = f.read
+ end
+ FakeWeb.register_uri(:get, "http://www.pivotaltracker.com/services/v3/projects/291045/stories/4460039/notes",
+   :headers => { 'X-TrackerToken' => "xxxxx", 'Content-Type' => 'application/xml' },
+   :body => notes_4460038_xml)
