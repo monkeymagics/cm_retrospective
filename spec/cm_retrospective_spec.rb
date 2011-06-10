@@ -57,7 +57,9 @@ describe "CmRetrospective" do
     end
 
     it "現在のイテレーションでcurrentに入っているストーリーが取得できる" do
-      stories = @cmr.current_stories(:attributes => [:story_time, :current_state, :estimate, :name])
+      # これは current_stories の仕様として正しくない
+      # このメソッドは PivotalTracker::Iteration#current のショートカットで、レスポンスは Story オブジェクトの配列となる
+      stories = @cmr.current_stories(:attributes => [:story_type, :current_state, :estimate, :name])
       stories.should == [
         "     bug   accepted     タイムアウト強制停止したネストしたジョブネット内のジョブを選択して再実行すると実行スケジュールが終了しない場合がある",
         " feature   accepted   2 リリース計画を要員計画と共に見直す",
