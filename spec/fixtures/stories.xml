@@ -5,43 +5,58 @@
     <project_id type="integer">102622</project_id>
     <story_type>feature</story_type>
     <url>http://www.pivotaltracker.com/story/show/4460038</url>
-    <estimate type="integer">1</estimate>
-    <current_state>unstarted</current_state>
+    <estimate type="integer">13</estimate>
+    <current_state>delivered</current_state>
     <description>This is a story that has comments.</description>
-    <name>This is for comments</name>
+    <name>ほげほげほげ</name>
     <requested_by>Jon Mischo</requested_by>
     <created_at type="datetime">2010/07/27 21:53:16 UTC</created_at>
     <updated_at type="datetime">2010/07/27 22:20:48 UTC</updated_at>
     <notes type="array">
       <note>
         <id type="integer">2111593</id>
-        <text>This is a comment...whee!</text>
+        <text>所要時間: 2h</text>
         <author>Jon</author>
         <noted_at type="datetime">2010/07/27 22:15:48 UTC</noted_at>
       </note>
       <note>
         <id type="integer">2128955</id>
-        <text>Test note</text>
+        <text>所要時間: 3h</text>
         <author>Test Suite Access</author>
         <noted_at type="datetime">2010/07/29 18:15:09 UTC</noted_at>
       </note>
       <note>
         <id type="integer">2128959</id>
-        <text>Test note</text>
+        <text>所要時間: 1h</text>
         <author>Test Suite Access</author>
         <noted_at type="datetime">2010/07/29 18:16:12 UTC</noted_at>
       </note>
+    </notes>
+  </story>
+  <story>
+    <id type="integer">4460039</id>
+    <project_id type="integer">102622</project_id>
+    <story_type>bug</story_type>
+    <url>http://www.pivotaltracker.com/story/show/4460039</url>
+    <estimate type="integer"></estimate>
+    <current_state>delivered</current_state>
+    <description>This is a story that has comments.</description>
+    <name>xxxxがうごかない</name>
+    <requested_by>Jon Mischo</requested_by>
+    <created_at type="datetime">2010/07/27 21:53:16 UTC</created_at>
+    <updated_at type="datetime">2010/07/27 22:20:48 UTC</updated_at>
+    <notes type="array">
       <note>
-        <id type="integer">2129077</id>
-        <text>Test note</text>
-        <author>Test Suite Access</author>
-        <noted_at type="datetime">2010/07/29 18:22:26 UTC</noted_at>
+        <id type="integer">2111593</id>
+        <text>所要時間: 2h</text>
+        <author>Jon</author>
+        <noted_at type="datetime">2010/07/27 22:15:48 UTC</noted_at>
       </note>
       <note>
-        <id type="integer">2129374</id>
-        <text>Test note</text>
+        <id type="integer">2128959</id>
+        <text>所要時間: 1.0h</text>
         <author>Test Suite Access</author>
-        <noted_at type="datetime">2010/07/29 18:55:44 UTC</noted_at>
+        <noted_at type="datetime">2010/07/29 18:16:12 UTC</noted_at>
       </note>
     </notes>
   </story>
