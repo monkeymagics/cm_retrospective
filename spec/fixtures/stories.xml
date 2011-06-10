@@ -41,7 +41,7 @@
     <estimate type="integer"></estimate>
     <current_state>delivered</current_state>
     <description>This is a story that has comments.</description>
-    <name>xxxxがうごかない</name>
+    <name>xxxxが動かない</name>
     <requested_by>Jon Mischo</requested_by>
     <created_at type="datetime">2010/07/27 21:53:16 UTC</created_at>
     <updated_at type="datetime">2010/07/27 22:20:48 UTC</updated_at>

@@ -54,4 +54,4 @@ FakeWeb.register_uri(:get, "http://www.pivotaltracker.com/services/v3/projects/2
  end
  FakeWeb.register_uri(:get, "http://www.pivotaltracker.com/services/v3/projects/291045/stories/4460039/notes",
    :headers => { 'X-TrackerToken' => "xxxxx", 'Content-Type' => 'application/xml' },
-   :body => notes_4460038_xml)
+   :body => notes_4460039_xml)
