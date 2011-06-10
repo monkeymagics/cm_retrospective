@@ -14,7 +14,13 @@
   </note>
   <note>
     <id type="integer">2128959</id>
-    <text>所要時間: 1h</text>
+    <text>所要時間: 1h (佐藤&amp;鈴木)</text>
+    <author>Test Suite Access</author>
+    <noted_at type="datetime">2010/07/29 18:16:12 UTC</noted_at>
+  </note>
+  <note>
+    <id type="integer">2128960</id>
+    <text>テスト</text>
     <author>Test Suite Access</author>
     <noted_at type="datetime">2010/07/29 18:16:12 UTC</noted_at>
   </note>

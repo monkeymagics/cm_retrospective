@@ -12,7 +12,9 @@ class CmRetrospective
       @stories.each do |s|
         spent = 0
         s.notes.all.each do |n|
-           spent += n.text.scan(/\d+\.*\d*h/).first.first.to_i
+          if (scaned_text = n.text.scan(/\d+\.*\d*h/)) && !scaned_text.empty?
+            spent += scaned_text.first.first.to_i
+          end
         end
         estimate = s.estimate || "-"
         result << "#{s.story_type.ljust(7, " ")} #{estimate.to_s.rjust(6, " ")} #{spent.to_s.rjust(5, " ")}h  #{s.name.force_encoding('UTF-8')}\n"
