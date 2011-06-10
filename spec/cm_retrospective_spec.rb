@@ -96,6 +96,17 @@ EOS
     @cmr.velocity_per_pair_day(:pair => 3.5, :iteration_days => 4.5).should == 3.0
   end
 
+  context "story_summary_table" do
+    it "引数に指定した期間のストーリーの2重配列を取得できること" do
+      table = @cmr.story_summary_table(:since => 1.week.ago)
+      table.to_text.should == <<EOS
+type     point  spent  story_name
+feature     13     6h  ほげほげほげ
+bug          -     3h  xxxxが動かない
+EOS
+    end
+  end
+
   context "iterations" do
     it "current_iterations からストーリーの一覧を取得できる"
     it "current_iterations と backlog からストーリーの一覧を取得できる"
